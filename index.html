@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title> Train HW </title>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="transparent">
+        <div class="nav-wrapper">
+            <div class="container">
+                <a href="#" class="brand-logo center black-text">Train Schedule</a>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <!-- Table for Scedule Display -->
+        <h4>Current Train Schedule</h4>
+        <table class="striped bordered">
+            <thead>
+                <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequencey</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                </tr>
+            </thead>
+            <!--TODO: add tr and td need to be dynamic -->
+            <tbody id="train-info">
+
+            </tbody>
+        </table>
+        <br>
+        <!-- Form to add more trains -->
+        <h4>Add to Schedule</h4>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Train Name" id="new-train" type="text" class="validate">
+                        <label for="Train-Name">Train Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input placeholder="Destination" id="new-destination" type="text" class="validate">
+                        <label for="Destination">Destination</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="First Train Time (HH:mm-Miliatary Time)" id="first-departure" type="text" class="validate">
+                        <label for="first-departure">First Train Time (HH:mm-Miliatary Time)</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input placeholder="Frequency (min)" id="new-frequency" type="text" class="validate">
+                        <label for="new-frequency">Train Frequency (min)</label>
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <!--JavaScript -->
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- JQUERY JS -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <!-- Firebase JS -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <!-- App JS -->
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
